@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  height: 100%;
+}
+#Main #Board {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  box-shadow: 1px 1px 10px black;
+}
+#Main #Board aside {
+  height: 70px;
+  width: 70px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Main #Board aside img {
+  height: 100%;
+  width: 100%;
+}
+#Main #Scores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+#Main #Scores p {
+  font-weight: bold;
+  margin-top: 1px;
+}
+#Main #Scores aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 5px;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */

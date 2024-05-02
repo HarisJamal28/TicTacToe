@@ -8,6 +8,7 @@ var GameOver = false;
 var P1 = document.getElementById('p1score');
 var P2 = document.getElementById('p2score');
 var Draw = 0;
+var result = document.getElementById("Results");
 
 var P1score = 0;
 var P2score = 0;
@@ -70,48 +71,56 @@ function Win(id){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
     if(arrX.includes('1')&&arrX.includes('4')&&arrX.includes('7')){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
     if(arrX.includes('1')&&arrX.includes('5')&&arrX.includes('9')){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
     if(arrX.includes('4')&&arrX.includes('5')&&arrX.includes('6')){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
     if(arrX.includes('2')&&arrX.includes('5')&&arrX.includes('8')){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
     if(arrX.includes('3')&&arrX.includes('6')&&arrX.includes('9')){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
     if(arrX.includes('3')&&arrX.includes('5')&&arrX.includes('7')){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
     if(arrX.includes('7')&&arrX.includes('8')&&arrX.includes('9')){
         console.log("X Wins!")
         P1score++;
         P1.innerHTML = `${P1score}`;
+        result.innerText = 'X Wins!'
         GameOver = true;
     }
 
@@ -125,48 +134,56 @@ function Win(id){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
     if(arrO.includes('1')&&arrO.includes('4')&&arrO.includes('7')){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
     if(arrO.includes('4')&&arrO.includes('5')&&arrO.includes('6')){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
     if(arrO.includes('1')&&arrO.includes('5')&&arrO.includes('9')){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
     if(arrO.includes('2')&&arrO.includes('5')&&arrO.includes('8')){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
     if(arrO.includes('3')&&arrO.includes('6')&&arrO.includes('9')){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
     if(arrO.includes('3')&&arrO.includes('5')&&arrO.includes('7')){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
     if(arrO.includes('7')&&arrO.includes('8')&&arrO.includes('9')){
         console.log("O Wins!")
         P2score++;
         P2.innerHTML = `${P2score}`;
+        result.innerText = 'O Wins!'
         GameOver = true;
     }
 
@@ -184,9 +201,11 @@ function Win(id){
         turn = false;
         Draw = 0;
         GameOver = false;
+        result.innerText = '';
     },1000);
     }else{
         if(Draw==9){
+            result.innerText = 'DRAW!'
             setTimeout(function(){
                 Board.querySelectorAll('aside').forEach(box=>{
                     box.innerHTML = '';
@@ -199,6 +218,7 @@ function Win(id){
                 turn = false;
                 GameOver = false;
                 Draw = 0;
+                result.innerText = ''
                 console.log('DRAW')
             },1000)
         }

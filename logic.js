@@ -50,12 +50,7 @@ Board.querySelectorAll('aside').forEach(box => {
             }
         }
         
-    })
-    // box.addEventListener('mouseenter',function(){
-    //     let y = console.log(this.id)
-    // })
-
-    
+    })    
 });
 
 function Win(id){
@@ -123,13 +118,17 @@ function Win(id){
         result.innerText = 'X Wins!'
         GameOver = true;
     }
-
-
-
-
-
-
-
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
+    // 
     if(arrO.includes('1')&&arrO.includes('2')&&arrO.includes('3')){
         console.log("O Wins!")
         P2score++;
@@ -228,6 +227,21 @@ function Win(id){
     
 }
 
+function Reload(){
+    location.reload();
+}
 
 
-
+function ClearBoard(){
+    Board.querySelectorAll('aside').forEach(box=>{
+        box.innerHTML = '';
+        box.classList.remove('FlagX');
+        box.classList.remove('FlagO');
+    })
+    arrX = []
+    arrO = []
+    turn = false;
+    Draw = 0;
+    GameOver = false;
+    result.innerText = '';
+}

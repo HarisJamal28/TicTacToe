@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section id="Main">
         <h1>Tic Tac Toe</h1>
+        <div id="Commands">
+            <article style="margin-right: 20px;">
+                <button onclick="Reload()"><i class="fa-solid fa-power-off"></i></button>
+            </article>
         <div id="Board">
             <aside></aside>
             <aside></aside>
@@ -19,6 +24,10 @@
             <aside></aside>
             <aside></aside>
             <aside></aside>
+        </div>
+            <article style="margin-left: 20px;">
+                <button onclick="ClearBoard()"><i class="fa-solid fa-repeat"></i></button>
+            </article>
         </div>
         <br>
         <div id="Results"></div>

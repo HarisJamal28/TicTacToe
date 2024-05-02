@@ -29,6 +29,14 @@ body {
   height: 100%;
   width: 100%;
 }
+#Main #Results {
+  border: 1px solid black;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
 #Main #Scores {
   display: flex;
   justify-content: space-between;
